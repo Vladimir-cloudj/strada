@@ -1,7 +1,7 @@
 let year = prompt('В каком году была опубликована спецификация ECMAScript-2015?', '');
 
-if (isNaN(year)) {
-	alert('enter a number')
+if (year === "" || isNaN(year)) {
+	alert('введите число')
 }
 else if (year < 2015) {
   alert( 'Это слишком рано...' );
